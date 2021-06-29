@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Item
+comment1.params=
+comment1.target=Item()
+comment1.text=\r\n\ Construct\ a\ new\ Item\ object\r\n\ with\ random\ priorities\r\n
+comment2.params=other
+comment2.target=int\ compareTo(Item)
+comment2.text=\ \r\n\ Compare\ this\ Item\ with\ another\ Item\ to\ determine\ who\ should\ \r\n\ \ be\ dequeued\ first.\r\n\ An\ item\ should\ be\ earlier\ in\ the\ ordering\ if\ they\ should\ be\ dequeued\ first.\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=toString
+numComments=4

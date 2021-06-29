@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=MeasuringQueues
+comment0.text=\ \r\n\ \ Measures\ the\ performance\ of\ different\ ways\ of\ doing\ a\ priority\ queue\ of\ Items\r\n\ \ Uses\ an\ Item\ class\ that\ has\ nothing\ in\ it\ but\ a\ priority\ (so\ it\ takes\r\n\ \ \ minimal\ time\ to\ construct\ a\ new\ Item).\r\n\ \ The\ Item\ constructor\ doesn't\ need\ any\ arguments\r\n\ \ Remember\ that\ small\ priority\ values\ are\ the\ highest\ priority\:\ 1\ is\ higher\ priority\ than\ 10.\r\n\ \ Three\ different\ choices\ to\ measure\:\r\n\ \ \ \ \ \ Using\ a\ built-in\ PriorityQueue\r\n\ \ \ \ \ \ Using\ an\ ArrayList,\ with\r\n\ \ \ \ \ \ \ \ \ -\ the\ head\ of\ the\ queue\ (the\ next\ item\ to\ poll)\ head\ at\ 0,\r\n\ \ \ \ \ \ \ \ \ -\ the\ tail\ of\ the\ queue\ (where\ the\ offered\ item\ is\ put)\ at\ the\ end\r\n\ \ \ \ \ \ \ \ \ -\ sorting\ the\ list\ every\ time\ you\ add\ an\ item.\r\n\ \ \ \ \ \ Using\ an\ ArrayList,\ with\r\n\ \ \ \ \ \ \ \ \ -\ the\ head\ of\ the\ queue\ at\ end\r\n\ \ \ \ \ \ \ \ \ -\ the\ tail\ of\ the\ queue\ at\ 0\r\n\ \ \ \ \ \ \ \ \ -\ sorting\ the\ list\ (in\ reverse\ order)\ every\ time\ you\ add\ an\ item.\r\n\ \ \ \ \ \ \ \ \ \r\n\ \ Each\ method\ should\ have\ an\ items\ parameter,\ which\ is\ a\ collection\ of\ Items\r\n\ \ \ \ which\ should\ be\ initially\ added\ to\ the\ queue\ (eg\ \ new\ PriorityQueue<Item>(items);\ or\r\n\ \ \ \ new\ ArrayList<Item>(items))\r\n\ \ \ \ It\ should\ then\ repeatedly\ dequeue\ an\ item\ from\ the\ queue,\ and\ enqueue\ a\ new\ Item().\ \r\n\ \ \ \ It\ should\ do\ this\ 100,000\ times.\r\n\ \ \ \ (the\ number\ of\ times\ can\ be\ changed\ using\ the\ textField)\r\n\ \ When\ testing\ that\ your\ methods\ work\ correctly,\ you\ should\ have\ debugging\ statements\r\n\ \ \ \ such\ as\ UI.println(queue)\ in\ the\ loop\ to\ print\ out\ the\ state\ of\ the\ queue.\r\n\ \ \ \ You\ should\ comment\ them\ out\ before\ doing\ the\ measurement\r\n
+comment1.params=arguments
+comment1.target=void\ main(java.lang.String[])
+comment1.text=main\ method
+comment2.params=
+comment2.target=void\ setupGUI()
+comment2.text=\r\n\ Setup\ the\ GUI\r\n
+comment3.params=
+comment3.target=void\ measurePQ()
+comment3.text=\r\n\ Create\ a\ priority\ queue\ using\ a\ PriorityQueue,\ \r\n\ adding\ 1,000\ items\ to\ the\ queue.\ (this\ needs\ to\ vary\!\!)\r\n\ Measure\ the\ cost\ of\ adding\ and\ removing\ an\ item\ from\ the\ queue.\r\n
+comment4.params=n
+comment4.target=void\ measurePQ(int)
+comment4.text=\r\n\ Create\ a\ priority\ queue\ using\ a\ PriorityQueue,\ \r\n\ adding\ n\ items\ to\ the\ queue.\r\n\ Measure\ the\ cost\ of\ adding\ and\ removing\ an\ item\ from\ the\ queue.\r\n
+comment5.params=n
+comment5.target=void\ measureALFront(int)
+comment5.text=\r\n\ Create\ a\ queue\ using\ an\ ArrayList\ with\ the\ head\ at\ the\ front\ (position\ 0).\r\n\ Add\ n\ items\ to\ the\ list\ and\ then\ sort\ the\ list.\r\n\ Then,\ enqueue\ (at\ end)\ and\ dequeue\ (from\ 0)\ TIMES\ times.\r\n
+comment6.params=n
+comment6.target=void\ measureALEnd(int)
+comment6.text=\r\n\ Create\ a\ queue\ using\ an\ ArrayList\ with\ the\ head\ at\ the\ end.\r\n\ Add\ n\ items\ to\ the\ list\ and\ then\ sort\ the\ list.\r\n\ Note\:\ Head\ of\ queue\ is\ at\ the\ end\ of\ the\ list,\ \r\n\ so\ we\ need\ to\ sort\ in\ the\ reverse\ order\ of\ Items\ (so\ the\ smallest\ value\ comes\ at\ the\ end)\r\n\ Then,\ enqueue\ (at\ end)\ and\ dequeue\ (from\ 0)\ TIMES\ times.\r\n
+comment7.params=
+comment7.target=void\ measure()
+comment7.text=\r\n\ For\ a\ sequence\ of\ values\ of\ n,\ from\ 1000\ to\ 1024000,\r\n\ \ -\ call\ each\ of\ the\ measuring\ methods,\r\n
+numComments=8
